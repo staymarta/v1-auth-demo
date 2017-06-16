@@ -65,6 +65,9 @@ function getUser() {
     $('#username').val(data.data.username)
 
     $('#raw').html(JSON.stringify(data, 0, 2))
+
+
+    hljs.highlightBlock($('#raw')[0]); 
   })
 }
 
