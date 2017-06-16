@@ -22,3 +22,7 @@ $ <ip> dev.staymarta.com
 $ brew install devd
 $ yarn start
 ```
+
+### Libraries
+
+Authentication: [Hawk](https://github.com/hueniverse/hawk)
