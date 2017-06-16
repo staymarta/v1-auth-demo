@@ -1,0 +1,12 @@
+{
+  "name": "staymarta-auth-test",
+  "version": "1.0.0",
+  "description": "StayMarta's v1 API Auth Demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "devd -ol ."
+  },
+  "repository": "https://github.com/staymarta/v1-auth-demo",
+  "author": "Jared Allard <jared@staymarta.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>v1 StayMarta Auth Demo</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      input {
+        width: 100%;
+      }
+
+      .user input {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .user button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      pre {
+          white-space: pre-wrap;
+          background: hsl(30,80%,90%);
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class='container'>
+      <h1>Callback</h1>
+
+      <br />
+
+      <p>Your API key:</p>
+      <input class='form-control' id='key' type='text' disabled></input>
+
+      <br />
+
+      <p>Your ID:</p>
+      <input class='form-control' id='id' type='text' disabled></input>
+
+      <br /><br /><br /><br />
+
+      <div class='user'>
+        <h3>User Information</h3>
+
+        <button class='btn btn-info' onclick="getUser()">Populate User Information</button>
+
+        <h4>Full Name</h4>
+        <input class='form-control' id='name' type='text' disabled placeholder="Full Name (.name)"></input>
+
+        <h4>Email</h4>
+        <input class='form-control' id='email' type='text' disabled placeholder="Email (.email)"></input>
+
+        <h4>Username</h4>
+        <input class='form-control' id='username' type='text' disabled placeholder="Username (.username)"></input>
+
+
+        <h4>Raw</h4>
+        <pre id='raw'>
+
+        </pre>
+
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/hawk.js"></script>
+    <script src="js/callback.js"></script>
+  </body>
+</html>
